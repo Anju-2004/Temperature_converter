@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay muted loop>
+            <source src="background.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="container">
+            <h1>Temperature Converter</h1>
+            <div class="input-container">
+                <label for="celsiusInput">Celsius:</label>
+                <input type="number" id="celsiusInput" placeholder="Enter temperature in Celsius">
+            </div>
+
+            <div class="input-container">
+                <label for="fahrenheitInput">Fahrenheit:</label>
+                <input type="number" id="fahrenheitInput" placeholder="Enter temperature in Fahrenheit">
+            </div>
+
+            <div class="button-group">
+                <button onclick="convertCelsiusToFahrenheit()">Convert to Fahrenheit</button>
+                <button onclick="convertFahrenheitToCelsius()">Convert to Celsius</button>
+                <button onclick="clearInput()">Clear</button>
+            </div>
+
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
